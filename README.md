@@ -54,19 +54,23 @@ Imports and Rendering:
 Imports StrictMode for better debugging.
 Imports createRoot to initialize the React app.
 Renders the App component inside the 'root' div from index.html.
+
 How the Code Works
 User Interaction: User enters a location in the input field and presses "Enter".
 Event Handling: The searchLocation function fires, making an API request.
+
 State Management:
 axios.get fetches data, triggering an update in data state.
 setLocation('') resets the input field.
 Rendering: React re-renders the app due to state changes.
 If data has weather info, it's displayed.
 Elements with no data aren't rendered (JavaScript's short-circuit evaluation).
+
 Running the Application
 Installation: Requires npm install to install dependencies like React and Axios.
 Execution: npm start to run the app, usually on localhost:3000.
 Additional Notes
+
 Security: The API key is directly embedded in the source, which poses a security risk for real-world applications.
 Error Handling: Implement error handling for scenarios where the API request fails.
 Customization: styles.css can be modified for more personalized styling.
